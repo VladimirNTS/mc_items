@@ -5,10 +5,15 @@
     <title>Заголовок страницы</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <style>
+        body {
+            background-color: var(--tg-theme-destructive-secondary-bg-color)
+        } 
        .mbtn {
            position: fixed;
            bottom: 0px;
            width: 100%;
+           background-color: var(--tg-theme-destructive-button-color);
+           color: var(--tg-theme-destructive-button-text-color);
        }
       .main {
           display: flex;
@@ -23,6 +28,7 @@
           margin: 5px;
           transition:all ease 0.3s;
           border-radius:2px;
+          background-color: var(--tg-theme-destructive-bg-color);
       }
       .main div:hover {
           width: 30%;
