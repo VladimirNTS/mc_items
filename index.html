@@ -65,9 +65,6 @@
         
     </div>
     
-    <div class="mbtn text-center py-2">
-        <button class="btn text-center align-items-center">ПОДТВЕРДИТЬ</button>
-    </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="items_list.js"></script>
     <script>
@@ -88,7 +85,7 @@
         function choose(name) {
             item = name;
             tg.MainButton.setText(item);
-            
+            tg.MainButtom.show();
             return item;
         };
         
