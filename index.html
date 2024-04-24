@@ -76,7 +76,7 @@
             var elem = document.createElement("div");
             elem.setAttribute("class", "works__content__smallRow");
             elem.innerHTML = `
-                <span class="name", style="word-wrap:break-word;">`+list[i]['name']+`</span><br>
+                <span class="name", onclick="choose(`+list[i]['id']+`)",style="word-wrap:break-word;">`+list[i]['name']+`</span><br>
                 <span class="id" style="display: none">`+list[i]['id'].replace("minecraft:", "")+`</span>
 `;
             main_div.appendChild(elem);          
