@@ -74,7 +74,7 @@
         
         for (var i = 0; i < list.length; i++){
             var elem = document.createElement("div");
-            elem.setAttribute("onclick", "choose('" + (list[i]['id'])+"')");
+            elem.setAttribute("onclick", "choose('" + (list[i]['id'])+"');");
             elem.innerHTML = `
                 <span class="name" style="word-wrap:break-word;">`+list[i]['name']+`</span><br>
                 <span class="id" style="display: none">`+list[i]['id'].replace("minecraft:", "")+`</span>
@@ -84,6 +84,7 @@
 
         function choose(name) {
             item = name;
+            console.log(item);
             tg.MainButton.setText(item);
             tg.MainButtom.show();
             return item;
