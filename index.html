@@ -71,6 +71,7 @@
     <script src="items_list.js"></script>
     <script>
         var main_div = document.querySelector(".main")
+        var item;
         
         for (var i = 0; i < list.length; i++){
             var elem = document.createElement("div");
@@ -81,6 +82,11 @@
 `;
             main_div.appendChild(elem);          
         }
+
+        function choose(name) {
+            item = name
+            return item
+        };
     </script>
 </body>
 </html>
